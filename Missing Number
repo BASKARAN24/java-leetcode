@@ -1,0 +1,17 @@
+class Solution {
+    public int missingNumber(int[] nums) {
+        int min = Integer.MAX_VALUE;
+        int max = nums.length;
+        int actual_sum = 0;
+        for(int i:nums){
+            min = Math.min(i,min);
+            // max = Math.max(i,max);
+            actual_sum += i;
+        }
+        int original_sum = 0;
+        for(int i=min;i<=max;i++){
+            original_sum += i;
+        }
+        return original_sum - actual_sum;
+    }
+}
