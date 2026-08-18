@@ -1,8 +1,8 @@
 class Solution {
     public int countDistinctIntegers(int[] nums) {
-        List<Integer> list = new ArrayList<>();
+        Set<Integer> set = new HashSet<>();
         for(int i=0;i<nums.length;i++){
-            list.add(nums[i]);
+            set.add(nums[i]);
         }
         for(int i=0;i<nums.length;i++){
             int a = nums[i];
@@ -13,12 +13,9 @@ class Solution {
                 b += rem;
                 a /= 10;
             }
-            list.add(b);
+            set.add(b);
         }
-        Set<Integer> set = new HashSet<>();
-        for(int i:list){
-            set.add(i);
-        }
+    
         return set.size();
     }
 }
