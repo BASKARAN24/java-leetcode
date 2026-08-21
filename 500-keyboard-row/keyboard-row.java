@@ -25,11 +25,11 @@ class Solution {
                 list.add(word);
             }
         }
-        String[] arr = new String[list.size()];
-        int i = 0;
-        for(String s:list){
-            arr[i++] = s;
-        }
-        return arr;
+        // String[] arr = new String[list.size()];
+        // int i = 0;
+        // for(String s:list){
+        //     arr[i++] = s;
+        // }
+        return list.toArray(new String[list.size()]);
     }
 }
