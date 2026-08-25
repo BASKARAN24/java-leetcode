@@ -7,8 +7,7 @@ class Solution {
             remainingBottles = emptyBottles % numExchange;
             emptyBottles = emptyBottles / numExchange;
             a += emptyBottles;
-            emptyBottles += remainingBottles
-            ;
+            emptyBottles += remainingBottles;
         }
         return a;
     }
