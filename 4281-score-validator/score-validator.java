@@ -10,8 +10,7 @@ class Solution {
                 return arr;
             }
             if(s.equals("W"))counter++;
-            else if(s.equals("WD"))score++;
-            else if(s.equals("NB"))score++;
+            else if(s.equals("WD") || s.equals("NB"))score++;
             else{
                 int a = Integer.parseInt(s);
                 score += a;
